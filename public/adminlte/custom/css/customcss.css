@@ -1,0 +1,230 @@
+/*css tuy chinh*/
+
+#section-wrapper
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #f36320;
+}
+#customenu-from
+{
+	padding: 0px !important;
+	margin:0px!important;	
+}
+
+
+
+
+
+/*spiner*/
+.ui-widget-overlay-v2 {
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ text-align:center;
+ /*padding:50%;*/
+ z-index:9000;
+ background:url(../images/background.jpeg);
+ background-repeat:repeat;
+ background-attachment:fixed;
+ background-position:center;
+ background-size:cover;
+ height:100%
+}
+.ui-widget-overlay-v2::after {
+ display:block;
+ content:'';
+ background:#030303b8;
+ width:100%;
+ height:100%;
+ position:fixed;
+ z-index:-1;
+ top:0;
+ left:0;
+ text-align:center;
+}
+/*spniner 1*/
+.lds-hourglass {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 50%; 
+  top: 50%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+
+/*spiner 2*/
+.lds-spinner {
+ display:inline-block;
+ position:relative;
+ width:64px;
+ height:64px
+}
+.lds-spinner::after {
+ content:"";
+ background:black
+}
+.lds-spinner div {
+ display:inline-block;
+ position:absolute;
+ left:6px;
+ width:13px;
+ background:#fff;
+ animation:lds-spinner 1.2s cubic-bezier(0,0.5,0.5,1) infinite
+}
+.lds-spinner div:nth-child(1) {
+ left:6px;
+ animation-delay:-0.24s
+}
+.lds-spinner div:nth-child(2) {
+ left:26px;
+ animation-delay:-0.12s
+}
+.lds-spinner div:nth-child(3) {
+ left:45px;
+ animation-delay:0
+}
+@keyframes lds-spinner {
+ 0% {
+  top:6px;
+  height:51px
+ }
+ 50%,
+ 100% {
+  top:19px;
+  height:26px
+ }
+}
+
+/*spiner3*/
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+
+/*end spniner*/
+.skin-black .sidebar-menu > li.header {
+    color: #fff;
+    background-image: linear-gradient(to right, #1CAF9A 0%, #17A2B8 100%);
+    background-repeat: repeat-x;
+    font-size: 13px;
+    font-weight: bold;
+}
+.br-menu-link {
+    background-image: linear-gradient(to right, #1CAF9A 0%, #17A2B8 100%);
+   
+    color: #fff;
+}
+
+/*custom logo*/
+ .main-header .logo{
+      font-size:23px; 
+ }
+ .logo-lg span {
+      font-weight: 300;
+      color: #1CAF9A;
+      display: inline-block;
+      transition: all 0.2s ease-in-out;
+      padding: 2px;
+      font-size:25px; }
+ .logo-lg:hover span:first-child,  logo-lg:focus span:first-child {
+        transform: translateX(-5px); }
+ .logo-lg:hover span:last-child,  logo-lg:focus span:last-child {
+        transform: translateX(5px); }
+
+/*end custom log*/
+.skin-black .wrapper, .skin-black .main-sidebar, .skin-black .left-side {
+    background-color: #1D2939;
+}
+table.dataTable.table_customer th, table.dataTable.table_customer td {
+    border: 1px solid #0000006b;
+}
+
+table.dataTable.nowrap th{
+  text-align: center;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+    border: 1px solid #0000006b;
+}
